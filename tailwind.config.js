@@ -1,0 +1,50 @@
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: ["./app/**/*.{js,ts,jsx,tsx}"],
+  presets: [require("nativewind/preset")],
+  theme: {
+    extend: {
+      colors: {
+        main: "#f8f8f8",
+        primary: "#030014",
+        secondary: "#151312",
+        accent: "#AB8BFF",
+        "accent-light": "#D6C9FF",
+        "accent-dark": "#7A4CFF",
+        background: "#F7F7F7",
+        "background-dark": "#333333",
+        "background-light": "#FFFFFF",
+        text: "#333333",
+        "text-light": "#FFFFFF",
+        "text-dark": "#000000",
+        "text-secondary": "#666666",
+        "text-secondary-light": "#999999",
+        "text-secondary-dark": "#444444",
+        "text-tertiary": "#999999",
+        "text-tertiary-light": "#CCCCCC",
+        "text-tertiary-dark": "#333333",
+        "text-quaternary": "#666666",
+        light: {
+          100: "#D6C6FF",
+          200: "#48b5db",
+          300: "#9CA4AB",
+          150: "#C4B3FF",
+          250: "#B29BFF",
+          400: "#A382FF",
+          500: "#8F68FF",
+          600: "#7A4CFF",
+
+          700: "#6533FF",
+          800: "#4F19FF",
+          900: "#3A00FF",
+        },
+        dark: {
+          100: "#221f3d",
+          200: "#0f0d23",
+          300: "#000000",
+        },
+      },
+    },
+  },
+  plugins: [],
+};
